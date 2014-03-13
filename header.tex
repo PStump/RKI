@@ -1,0 +1,50 @@
+%Schriftgrösse, Layout, Papierformat, Art des Dokumentes
+\documentclass[11pt,twoside,a4paper,fleqn]{article}
+%Einstellungen der Seitenränder
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm,includeheadfoot]{geometry}
+% Sprache, Zeichensatz, packages
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel,varioref}
+\usepackage{amssymb,amsmath,fancybox,graphicx,lastpage,wrapfig,fancyhdr,hyperref,verbatim}
+
+
+%Farben für tabelle
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+%\cellcolor{Farbe} für Farben einer Zelle
+%\rowcolor{Farbe}  für Farben einer Zeile
+
+%Schriftarten
+%http://www.tug.dk/FontCatalogue/arial/
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+%tabularx package
+%http://mirror.switch.ch/ftp/mirror/tex/macros/latex/required/tools/tabularx.pdf
+\usepackage{tabularx}
+%tabularx: Damit inhalt der Tabelle zentriert ist
+%\renewcommand{\tabularxcolumn}[1]{>{\normalsize\centering\arraybackslash}m{#1}}
+%aufhebender Befehl
+%\def\tabularxcolumn#1{p{#1}}
+
+
+%pdf info
+\hypersetup{pdfauthor={\authorinfo},pdftitle={\titleinfo},colorlinks=false}
+\author{\authorinfo}
+\title{\titleinfo}
+
+%Kopf- und Fusszeile
+\pagestyle{fancy}
+\fancyhf{}
+%Linien oben und unten
+\renewcommand{\headrulewidth}{0.5pt} 
+\renewcommand{\footrulewidth}{0.5pt}
+
+\fancyhead[L]{\titleinfo{ }\tiny{(\versioninfo)}}
+%Kopfzeile rechts bzw. aussen
+\fancyhead[R]{Seite \thepage { }von \pageref{LastPage}}
+%Fusszeile links bzw. innen
+\fancyfoot[L]{\footnotesize{\authorinfo}}
+%Fusszeile rechts bzw. ausen
+\fancyfoot[R]{\footnotesize{\today}}
