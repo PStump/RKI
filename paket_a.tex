@@ -9,12 +9,15 @@
 % standard header
 \input{./header}
 
+\usepackage{paralist}
+\usepackage{longtable}
+
 \newcommand{\herrcc}{Christian Caesar}
 \newcommand{\herrl}{Ludwig}
 
 \newcommand{\speakcc}{\textsc{CC:} &}
 \newcommand{\speakl}{\textsc{L:} &}
-\newcommand{\commenting}[1]{ & \multicolumn{1}{r}{#1}}
+\newcommand{\commenting}[1]{ & \multicolumn{1}{>{\raggedleft}p{13cm}}{#1}}
 
 
 \begin{document}
@@ -22,7 +25,7 @@
 
 %Titel
 \section*{\titleinfo}
-%	\input{text1.tex}
+	\input{text1.tex}
         \input{text2.tex}
 \end{document}
 
