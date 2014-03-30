@@ -1,0 +1,52 @@
+\newcommand{\titleinfo}{Handout RKI}
+\newcommand{\authorinfo}{Matthias Winterhalter, Pascal Stump, Michael Meisser, Stefan Steiner}
+\newcommand{\versioninfo}{v1.2}
+\date{\today}
+
+%Tabellen Höhe
+\renewcommand{\arraystretch}{1.4}
+
+
+% standard header
+\input{./00_header}
+
+\usepackage{paralist}
+\usepackage{longtable}
+
+\newcommand{\herrcc}{Christian Caesar}
+\newcommand{\herrl}{Ludwig}
+
+\newcommand{\speakcc}{\textsc{CC:} &}
+\newcommand{\speakl}{\textsc{L:} &}
+\newcommand{\commenting}[1]{ & \multicolumn{1}{>{\raggedleft}p{13cm}}{#1}}
+
+\usepackage{tabularx}
+% \input macht keine neue Seite
+% \include macht eine neue Seite
+\newcommand{\page}[1]{\tiny #1 \normalsize}
+\newcommand{\bsp}[1]{ \\
+\begin{tabularx}{\textwidth}{lX@{}} 
+&  \small{Bsp.: #1}  
+\end{tabularx}
+}
+
+
+
+\begin{document}
+\maketitle
+
+%Titel
+%\section*{\titleinfo}
+	\input{02_badPart.tex}
+        \input{02_goodPart.tex}
+%Anhang
+\appendix
+        \newpage
+        \section*{Anhang}
+        \input{03_badDialog.tex}
+        \newpage
+        \input{03_goodDialog.tex}
+        
+        
+\end{document}
+
