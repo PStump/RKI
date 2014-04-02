@@ -7,7 +7,7 @@
 
 PDFFILE     = paket_a.pdf
 MAINTEXFILE = paket_a.tex
-TEXFILES    = header.tex text1.tex
+TEXFILES    = header.tex text1.tex text2.tex
 
 all:     $(PDFFILE)
 

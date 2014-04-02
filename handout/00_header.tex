@@ -1,11 +1,11 @@
 %Schriftgrösse, Layout, Papierformat, Art des Dokumentes
 \documentclass[11pt,a4paper,appendixprefix]{article}
 %Einstellungen der Seitenränder
-\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm,includeheadfoot]{geometry}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,includeheadfoot]{geometry}
 % Sprache, Zeichensatz, packages
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel,varioref}
-%\usepackage{amssymb,amsmath,fancybox,graphicx,lastpage,wrapfig,fancyhdr,hyperref,verbatim}
+\usepackage{amssymb,amsmath,fancybox,graphicx,lastpage,wrapfig,fancyhdr,hyperref,verbatim}
 
 
 %Farben für tabelle
@@ -35,16 +35,16 @@
 \title{\titleinfo}
 
 %Kopf- und Fusszeile
-%\pagestyle{fancy}
-%\fancyhf{}
+\pagestyle{fancy}
+\fancyhf{}
 %Linien oben und unten
-%\renewcommand{\headrulewidth}{0.5pt} 
-%\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headrulewidth}{0.5pt} 
+\renewcommand{\footrulewidth}{0.5pt}
 
-%\fancyhead[L]{\titleinfo{ }\tiny{(\versioninfo)}}
+\fancyhead[L]{\titleinfo}
 %Kopfzeile rechts bzw. aussen
-%\fancyhead[R]{Seite \thepage { }von \pageref{LastPage}}
+\fancyhead[R]{Seite \thepage { }von \pageref{LastPage}}
 %Fusszeile links bzw. innen
-%\fancyfoot[L]{\footnotesize{\authorinfo}}
+\fancyfoot[L]{\footnotesize{\authorinfo}}
 %Fusszeile rechts bzw. ausen
-%\fancyfoot[R]{\footnotesize{\today}}
+\fancyfoot[R]{\footnotesize{\today}}
